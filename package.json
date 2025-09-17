@@ -13,6 +13,7 @@
     "preview": "pnpm run build && vite preview",
     "typecheck": "npm run cf-typegen && react-router typegen && tsc -b"
   },
+  "packageManager": "pnpm@10.16.1",
   "dependencies": {
     "@tanstack/react-query": "^5.83.0",
     "arktype": "^2.1.20",
