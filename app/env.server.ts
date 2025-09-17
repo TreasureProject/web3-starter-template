@@ -23,7 +23,7 @@ export function init() {
   if (parsed instanceof type.errors) {
     console.error('❌ Invalid environment variables:', parsed.summary);
 
-    throw new Error('Invalid environment variables', { cause: parsed.summary });
+    throw new Error(`Invalid environment variables: ${parsed.summary}`);
   }
 }
 
