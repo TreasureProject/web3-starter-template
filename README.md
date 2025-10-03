@@ -70,10 +70,5 @@ You can then promote a version to production after verification or roll it out p
 npx wrangler versions deploy
 ```
 
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+## Rule of thumb
+- Add env thats not a secret (basically PUBLIC_ ones or text) to wrangler.jsonc under `env`. Do not add the same ones to `.env` afterwards, as it will loosen the typecheck when running `npm run cf-typegen`.
