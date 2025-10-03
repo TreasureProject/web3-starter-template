@@ -5,8 +5,7 @@ import { defineConfig } from 'vite';
 import { iconsSpritesheet } from 'vite-plugin-icons-spritesheet';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-export default defineConfig(({ mode }) => {
-  console.log(mode, process.env.CLOUDFLARE_ENV);
+export default defineConfig(() => {
   return {
     build: {
       assetsInlineLimit(filePath) {
